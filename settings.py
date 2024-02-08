@@ -1,4 +1,6 @@
 import pygame.image
+from ctypes  import *
+
 
 class Settings ():
     """Класс для хранения всех настроек игры Alien Invasion."""
@@ -14,3 +16,6 @@ class Settings ():
         self.bullet_height = 15
         self.bullet_color = (60, 60, 60)
         self.bullet_allowed = 3
+
+        self.screen_width = windll.user32.GetSystemMetrics(0)
+        self.screen_heidht = windll.user32.GetSystemMetrics(1)
