@@ -8,7 +8,7 @@ class Bullet(Sprite):
         super().__init__()
         self.screen = ai_game.screen
         self.settings = ai_game.settings
-        self.color = self.settings.bullet_color
+
 
         # Создание снаряда в позиции (0,0) и назначение правильной позиции.
         self.image = pygame.image.load('file_game/PNG/Lasers/laserRed05.png')
